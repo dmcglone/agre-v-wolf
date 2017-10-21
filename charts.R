@@ -10,5 +10,5 @@ cds_m$CD115FP <- factor( as.character(cds_m$CD115FP), levels=desired_order )
 ggplot(cds_m,aes(x = CD115FP,y = value)) + 
   geom_bar(aes(fill = variable),stat = "identity",position = "dodge") +
   scale_fill_manual(values = c("DEM_PERC" = "#3EC0F3", "GOP_PERC" = "#F37561"), labels=c("Democratic %", "Republican %")) +
-  labs(x = "Congressional District", y="Normal Percentage of Vote", title = "New plot title", subtitle = "A subtitle") +
+  labs(x = "Congressional District", y="Normal Percentage of Vote", title = "Pennsylvania Congressional Districts", subtitle = "Ranked by normal Democratic vote percentage") +
   guides(fill=guide_legend(title=NULL))
